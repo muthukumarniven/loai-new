@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
 import Button from '../components/Button';
 
-const MainHeader = () => {
+const MainHeader = ({display="block"}) => {
     const navi = useLocation();
     const mobilePopupRef = useRef(null);
 
@@ -16,7 +16,6 @@ const MainHeader = () => {
                     <a className="navbar-brand loai-web-logo d-sm-none d-block" href="#"><img style={{ width: "100%", height: "100%", maxWidth: "50px", maxHeight: "50px" }} src={Images.logoSm} /></a>
 
                     <div className="d-flex align-items-center gap-md-2 gap-1">
-
 
                         <div className="nav-item d-xl-none d-block" ref={mobilePopupRef}>
                             <Link
@@ -37,7 +36,7 @@ const MainHeader = () => {
                     <div className="collapse navbar-collapse align-items-start justify-content-end" id="navbarSupportedContent">
                         <div className="d-flex" role="search">
                             <ul className="navbar-nav me-auto mb-2 mb-lg-0 header-nav-items gap-xl-2 gap-3 align-items-xl-center align-items-start flex-wrap">
-                                <li>
+                                <li style={{display:display}}>
                                     <Link
                                         className="nav-link text-black d-flex gap-2 text-decoration-none"
                                         to="/main-home"
@@ -46,7 +45,7 @@ const MainHeader = () => {
                                         Home
                                     </Link>
                                 </li>
-                                <li>
+                                <li style={{display:display}}>
                                     <Link
                                         className="nav-link text-black d-flex gap-2 text-decoration-none"
                                         to=""
@@ -55,7 +54,7 @@ const MainHeader = () => {
                                         About
                                     </Link>
                                 </li>
-                                <li>
+                                <li style={{display:display}}>
                                     <Link
                                         className="nav-link text-black d-flex gap-2 text-decoration-none"
                                         to=""
@@ -64,10 +63,10 @@ const MainHeader = () => {
                                         How it Works
                                     </Link>
                                 </li>
-                                <li>
+                                <li style={{display:display}}>
                                     <Link className="nav-link text-black d-flex gap-2 text-decoration-none" to="" style={{ fontFamily: navi.pathname === "" ? "Inter-Bold" : "Inter-Regular" }}>Sample Videos</Link>
                                 </li>
-                                <li>
+                                <li style={{display:display}}   >
                                     <Link
                                         className="nav-link text-black d-flex gap-2 text-decoration-none"
                                         to=""
@@ -75,7 +74,7 @@ const MainHeader = () => {
                                     >
                                         Support
                                     </Link></li>
-                                <li className='d-xl-block d-none'>
+                                <li style={{display:display}} className='d-xl-block d-none'>
                                     <Link
                                         className="nav-link text-black d-flex gap-2 text-decoration-none"
                                         to=""
@@ -84,7 +83,7 @@ const MainHeader = () => {
                                         Sign In
                                     </Link>
                                 </li>
-                                <li className='d-xl-block d-none'>
+                                <li style={{display:display}} className='d-xl-block d-none'>
                                     <Button padding='12px 22px' text="Sign up" />
                                 </li>
 

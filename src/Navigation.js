@@ -22,6 +22,7 @@ import TranscationHistory from './screens/TranscationHistory';
 import Notification from './screens/Notification';
 import IndivitualScreen from './screens/IndivitualScreen';
 import MainHome from './screens/MainHome';
+import SignUp from './screens/SignUp';
 
 
 export default function Navigation() {
@@ -51,6 +52,7 @@ export default function Navigation() {
                     <Route path='/notification' element={<Notification />} />
                     <Route path='/indivitual-screen' element={<IndivitualScreen />} />
                     <Route path='/main-home' element={<MainHome />} />
+                    <Route path='/signup' element={<SignUp />} />
                 </Routes>
             </BrowserRouter>
         </>
