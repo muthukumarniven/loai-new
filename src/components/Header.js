@@ -61,9 +61,8 @@ const Header = () => {
         <>
             <nav className="navbar navbar-expand-xl bg-body-tertiary shadow-sm">
                 <div className="container-fluid px-xl-5 px-3">
-                    <a className="navbar-brand loai-web-logo" href="#"><img src={Images.loaiLogo} /></a>
-                    <div className="d-flex align-items-center gap-md-2 gap-1">
-
+                    <a className="navbar-brand loai-web-logo d-sm-block d-none" href="#"><img src={Images.loaiLogo} /></a>
+                    <a className="navbar-brand loai-web-logo d-sm-none d-block" href="#"><img style={{ width: "100%", height: "100%", maxWidth: "50px", maxHeight: "50px" }} src={Images.logoSm} /></a>                    <div className="d-flex align-items-center gap-md-2 gap-1">
 
                         <div className="nav-item d-xl-none d-block" ref={mobilePopupRef}>
                             <Link className="nav-link" to="#" onClick={toggleMobilePopup}>
@@ -110,18 +109,19 @@ const Header = () => {
                             {isOpen && (
                                 <div className="avatar-popup">
                                     <ul>
-                                        <Link className='text-decoration-none' to="/profile">
-                                            <li>
+                                        <li>
+                                            <Link className='text-decoration-none' to="/profile">
+
                                                 <img src={Images.profileIcon} alt="Profile Icon" />
                                                 <span className='profile-popup-list text-black' to="/profile">Profile</span>
-                                            </li>
-                                        </Link>
-                                        <Link style={{ textDecoration: "none" }} to="/transcation-histoy">
-                                            <li>
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link style={{ textDecoration: "none" }} to="/transcation-histoy">
                                                 <img src={Images.transactionIcon} alt="Transaction Icon" />
                                                 <span className='profile-popup-list text-dark'>Transaction History</span>
-                                            </li>
-                                        </Link>
+                                            </Link>
+                                        </li>
 
 
                                         <li onClick={toggleSignOutPopup} style={{ cursor: 'pointer' }}>
@@ -136,17 +136,6 @@ const Header = () => {
                                                         <h1>Are you sure you want to sign out?
                                                         </h1>
                                                     </div>
-                                                    {/* <div className="popup-actions">
-                                                        <button onClick={() => {
-                                                            setShowSignOutPopup(false);
-                                                            // Add your sign-out logic here
-                                                            console.log('User signed out');
-                                                        }}>
-                                                            Yes, Sign out
-                                                        </button>
-                                                        <button onClick={toggleSignOutPopup}>Cancel</button>
-                                                    </div> */}
-
                                                     <div className='row'>
                                                         <div className=' col-md-12'>
                                                             <div className='d-flex align-items-center justify-content-between gap-md-4 gap-sm-2 gap-2'>
@@ -157,11 +146,9 @@ const Header = () => {
                                                             </div>
                                                         </div>
                                                     </div>
-
                                                 </div>
                                             </div>
                                         )}
-
                                     </ul>
                                 </div>
                             )}
@@ -173,30 +160,33 @@ const Header = () => {
                     <div className="collapse navbar-collapse align-items-start justify-content-end" id="navbarSupportedContent">
                         <div className="d-flex" role="search">
                             <ul className="navbar-nav me-auto mb-2 mb-lg-0 header-nav-items gap-xl-2 gap-3 align-items-xl-center align-items-start flex-wrap">
-                                <Link
-                                    className="nav-link text-black d-flex gap-2 text-decoration-none"
-                                    to="/"
-                                    style={{ fontFamily: navi.pathname === "/" ? "Inter-Bold" : "Inter-Regular" }}
-                                >
-                                    Home
-                                </Link>
-                                <Link
-                                    className="nav-link text-black d-flex gap-2 text-decoration-none"
-                                    to="/create-video"
-                                    style={{ fontFamily: navi.pathname === "/create-video" ? "Inter-Bold" : "Inter-Regular" }}
-                                >
-                                    Create a Video
-                                </Link>
+                                <li>
+                                    <Link
+                                        className="nav-link text-black d-flex gap-2 text-decoration-none"
+                                        to="/"
+                                        style={{ fontFamily: navi.pathname === "/" ? "Inter-Bold" : "Inter-Regular" }} >
+                                        Home
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link
+                                        className="nav-link text-black d-flex gap-2 text-decoration-none"
+                                        to="/create-video"
+                                        style={{ fontFamily: navi.pathname === "/create-video" ? "Inter-Bold" : "Inter-Regular" }}
+                                    >
+                                        Create a Video
+                                    </Link></li>
 
                                 <li className="nav-item">
                                     <a className="nav-link" href="#">How it Works</a>
                                 </li>
 
-
-                                <Link className="nav-link text-black d-flex gap-2 text-decoration-none" to="/sample-videos" style={{ fontFamily: navi.pathname === "/sample-videos" ? "Inter-Bold" : "Inter-Regular" }}>Sample Videos</Link>
-
-
-                                <Link className="nav-link text-black d-flex gap-2 text-decoration-none" to="/my-videos" style={{ fontFamily: navi.pathname === "/my-videos" ? "Inter-Bold" : "Inter-Regular" }}>My Videos</Link>
+                                <li>
+                                    <Link className="nav-link text-black d-flex gap-2 text-decoration-none" to="/sample-videos" style={{ fontFamily: navi.pathname === "/sample-videos" ? "Inter-Bold" : "Inter-Regular" }}>Sample Videos</Link>
+                                </li>
+                                <li>
+                                    <Link className="nav-link text-black d-flex gap-2 text-decoration-none" to="/my-videos" style={{ fontFamily: navi.pathname === "/my-videos" ? "Inter-Bold" : "Inter-Regular" }}>My Videos</Link>
+                                </li>
                                 <li className="nav-item dropdown">
                                     <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                         Help
@@ -253,18 +243,18 @@ const Header = () => {
                                     {isOpen && (
                                         <div className="avatar-popup">
                                             <ul>
-                                                <Link style={{ textDecoration: "none" }} to="/profile">
-                                                    <li>
+                                                <li>
+                                                    <Link style={{ textDecoration: "none" }} to="/profile">
                                                         <img src={Images.profileIcon} alt="Profile Icon" />
                                                         <span className='profile-popup-list' to="/profile">Profile</span>
-                                                    </li>
-                                                </Link>
-                                                <Link style={{ textDecoration: "none" }} to="/transcation-histoy">
-                                                    <li>
+                                                    </Link>
+                                                </li>
+                                                <li>
+                                                    <Link style={{ textDecoration: "none" }} to="/transcation-histoy">
                                                         <img src={Images.transactionIcon} alt="Transaction Icon" />
                                                         <span className='profile-popup-list'>Transaction History</span>
-                                                    </li>
-                                                </Link>
+                                                    </Link>
+                                                </li>
 
 
                                                 <li onClick={toggleSignOutPopup} style={{ cursor: 'pointer' }}>
@@ -294,8 +284,6 @@ const Header = () => {
                                                         </div>
                                                     </div>
                                                 )}
-
-
                                             </ul>
                                         </div>
                                     )}

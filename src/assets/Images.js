@@ -71,6 +71,12 @@ import download from './images/download.svg'
 
 import conformDelete from './images/delete.svg'
 
+import logoSm from './images/logo-sm.svg'
+import tick from './images/tick.svg'
+
+import bannerOne from './images/banner-1.png'
+import bannerTwo from './images/banner-2.png'
+import bannerThree from './images/banner-3.png'
 
 
 
@@ -153,7 +159,12 @@ const Images = {
     stepTwo,
     NotFound,
     download,
-    conformDelete
+    conformDelete,
+    logoSm,
+    tick,
+    bannerOne,
+    bannerTwo,
+    bannerThree
     
 
 
