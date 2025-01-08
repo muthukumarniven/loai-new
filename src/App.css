@@ -61,7 +61,7 @@ body{
   background: var(--white);
   border-radius: 50%;background-color: #007BFF;color: #fff;}
 .count-content-text p{font-family: "Poppins-Medium";font-size: 16px; color: #000;}
-.avaor-card-img { flex: 1 1 calc(24.83% - 1rem); max-width: calc(24.83% - 1rem);
+.avaor-card-img { flex: 1 1 calc(18.83% - 1rem); max-width: calc(18.83% - 0rem);
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;}
 .created-video-text p{color: #7D7D7D; font-size: 13px;font-family: "Poppins-Regular";}
 .created-video-text h6{color: #000000; font-size: 16px; font-family: "Poppins-SemiBold";}
@@ -408,13 +408,22 @@ cursor: pointer;
 
 
 .main-home-header{background-color: #fff;}
-
 .main-banner-header{background-color: #F5F7FA;padding: 107px 10px;}
-
 .get-app-container{margin-top: 78px;}
 .wellness-images{margin-top: 57px;}
-.wellness-images img{    width: 33.33%;
-  padding: 0 7px;}
+.wellness-images img{    width: 33.33%; padding: 0 7px;}
+
+.why-lovedone-header{background-color: #E1F7E3;}
+
+
+
+
+
+
+
+
+
+
 
 @media (max-width: 1200px) {.avaor-card-img { flex: 1 1 calc(32.33% - 1rem); max-width: calc(32.33% - 1rem);} .app-download-platform img{width: 9rem !important; height: 3rem !important;} .loai-web-logo img{ width: 18rem;}.profile-home img{width: 2.6rem; height: 2.6rem;} .header-nav-items li a{font-size: 16px;}}
 @media (max-width: 992px) {.avaor-card-img { flex: 1 1 calc(33.33% - 1rem); max-width: calc(33.33% - 1rem);}  .app-download-platform img{width: 6rem !important; height: 2rem !important;} .loai-web-logo img{ width: 15rem;}.profile-home img{width: 2.5rem; height: 2.5rem; }} 
