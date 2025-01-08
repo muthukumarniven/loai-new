@@ -197,8 +197,6 @@ const Header = () => {
 
 
                                 <Link className="nav-link text-black d-flex gap-2 text-decoration-none" to="/my-videos" style={{ fontFamily: navi.pathname === "/my-videos" ? "Inter-Bold" : "Inter-Regular" }}>My Videos</Link>
-
-
                                 <li className="nav-item dropdown">
                                     <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                         Help
