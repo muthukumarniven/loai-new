@@ -5,6 +5,7 @@ import { Link } from "react-router";
 import Button from "../components/Button";
 import Images from "../assets/Images";
 import { useNavigate } from "react-router-dom"; // Import useNavigate
+import RegisterFlowHeader from '../components/RegisterFlowHeader';
 
 
 const SignUp = () => {
@@ -23,8 +24,8 @@ const SignUp = () => {
 
     return (
         <>
-            <MainHeader display='none' />
-            <div style={{ height: "100vh" }} className="row w-100 m-0">
+        <RegisterFlowHeader/>
+        <div style={{ height: "100vh" }} className="row w-100 m-0">
                 <div className="col-12 d-flex align-items-center justify-content-center">
                     <div style={{ maxWidth: "90%", width: "100%", maxWidth: "525px" }} className="banner-content-container">
                         <div className='u-photo-section-container mb-5 mt-md-5 mt-sm-4 mt-4'>

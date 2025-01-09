@@ -3,6 +3,7 @@ import MainHeader from '../components/MainHeader';
 import Button from '../components/Button';
 import { Link } from 'react-router-dom';
 import { useNavigate } from "react-router-dom"; // Import useNavigate
+import RegisterFlowHeader from '../components/RegisterFlowHeader';
 
 const SignUpVerify = () => {
     const navigate = useNavigate(); // Initialize useNavigate
@@ -33,8 +34,8 @@ const SignUpVerify = () => {
 
     return (
         <>
-            <MainHeader display="none" />
-            <div className="row w-100 m-0" style={{ height: "100vh" }}>
+        <RegisterFlowHeader/>
+        <div className="row w-100 m-0" style={{ height: "100vh" }}>
                 <div className="col-12 d-flex align-items-center justify-content-center">
                     <div
                         className="banner-content-container"

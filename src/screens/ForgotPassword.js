@@ -1,10 +1,9 @@
-import React, { useState } from "react";
-import MainHeader from '../components/MainHeader'
+import React, { useState, useRef, useEffect } from 'react';
 import { Link } from "react-router";
 import Button from "../components/Button";
-import Images from "../assets/Images";
 import Input from '../components/Input'
 import { useNavigate } from "react-router-dom";
+import RegisterFlowHeader from '../components/RegisterFlowHeader';
 
 
 const ForgotPassword = () => {
@@ -14,15 +13,21 @@ const ForgotPassword = () => {
     const togglePasswordVisibility = () => {
         setShowPassword(!showPassword);
     };
-    const navigate = useNavigate(); 
+    const navigate = useNavigate();
 
     const handleNext = () => {
-        navigate("/forgot-verification"); 
+        navigate("/forgot-verification");
     };
+
+
+
     return (
         <>
-            <MainHeader display='none' />
-            <div style={{height:"100vh"}} className="row w-100 m-0">
+
+        <RegisterFlowHeader/>
+
+            {/* <MainHeader display='none' /> */}
+            <div style={{ height: "100vh" }} className="row w-100 m-0">
                 <div className="col-12 d-flex align-items-center justify-content-center">
                     <div style={{ maxWidth: "90%", width: "100%", maxWidth: "525px" }} className="banner-content-container">
                         <div className='u-photo-section-container mb-5 mt-5'>

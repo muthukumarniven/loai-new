@@ -1,9 +1,11 @@
 import React, { useState } from "react";
-import MainHeader from '../components/MainHeader'
 import Button from "../components/Button";
 import Images from "../assets/Images";
 import Input from '../components/Input'
 import { Link } from "react-router";
+import RegisterFlowHeader from '../components/RegisterFlowHeader';
+import { useNavigate } from "react-router-dom";
+
 
 const NewPassword = () => {
     const [showPassword, setShowPassword] = useState(false);
@@ -16,10 +18,15 @@ const NewPassword = () => {
     const toggleConfirmPasswordVisibility = () => {
         setShowConfirmPassword(!showConfirmPassword);
     };
+    const navigate = useNavigate(); 
+
+    const handleNext = () => {
+        navigate("/signin"); 
+    };
     return (
         <>
-            <MainHeader display='none' />
-            <div style={{ height: "100vh" }} className="row w-100">
+        <RegisterFlowHeader/>
+        <div style={{ height: "100vh" }} className="row w-100">
                 <div className="col-12 d-flex align-items-center justify-content-center">
                     <div style={{ maxWidth: "525px" }} className="banner-content-container">
                         <div className='u-photo-section-container mb-5 mt-5'>
@@ -75,11 +82,10 @@ const NewPassword = () => {
                             </div>
                             <p className="country-content-text mb-0 mt-3"> <span style={{ color: "red" }}>*</span>  Password must have at least one capital letter, one number and one special character and be at least 8 characters long  (!#$%*)</p>
 
-                            <Button marginTop="23px" text="Submit" />
+                            <Button onClick={handleNext} marginTop="23px" text="Submit" />
                             <div className="mt-3">
                                 <span className="account-details-text-content">Already have an account?<Link to="/signin" className="forgot-password-text text-decoration-none "> Sign In</Link></span>
                             </div>
-
                         </div>
                     </div>
                 </div>

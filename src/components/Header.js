@@ -62,9 +62,9 @@ const Header = () => {
         <>
             <nav className="navbar navbar-expand-xl bg-body-tertiary shadow-sm">
                 <div className="container-fluid px-xl-5 px-3">
-                    <a className="navbar-brand loai-web-logo d-sm-block d-none" href="#"><img src={Images.loaiLogo} /></a>
-                    <a className="navbar-brand loai-web-logo d-sm-none d-block" href="#"><img style={{ width: "100%", height: "100%", maxWidth: "50px", maxHeight: "50px" }} src={Images.logoSm} /></a>                    <div className="d-flex align-items-center gap-md-2 gap-1">
-
+                    <Link to="/" className="navbar-brand loai-web-logo d-sm-block d-none" href="#"><img src={Images.loaiLogo} /></Link>
+                    <Link to="/" className="navbar-brand loai-web-logo d-sm-none d-block" href="#"><img style={{ width: "100%", height: "100%", maxWidth: "50px", maxHeight: "50px" }} src={Images.logoSm} /></Link>
+                    <div className="d-flex align-items-center gap-md-2 gap-1">
                         <div className="nav-item d-xl-none d-block" ref={mobilePopupRef}>
                             <Link className="nav-link" to="#" onClick={toggleMobilePopup}>
                                 <img src={Images.notificationBell} alt="Notifications" />
@@ -143,8 +143,8 @@ const Header = () => {
                                                                 <button onClick={toggleSignOutPopup} className="btn-modal choose-btn-content rounded-5" >
                                                                     Cancel
                                                                 </button>
-                                                                <Button borderRadius='40px' width='50%' text="Sign Out" />
-                                                            </div>
+                                                                <Button onClick={handleNext} borderRadius='40px' width='50%' text="Sign Out" />
+                                                                </div>
                                                         </div>
                                                     </div>
                                                 </div>

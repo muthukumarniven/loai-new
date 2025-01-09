@@ -27,15 +27,15 @@ const MainHeader = ({ display = "block" }) => {
 
                         <div className="nav-item d-xl-none d-block" ref={mobilePopupRef}>
                             <Link
-                                className="nav-link text-black d-flex gap-2 text-decoration-none"
-                                to=""
+                                className="nav-link d-flex gap-2 text-decoration-none"
+                                to="/signin"
                                 style={{ fontFamily: navi.pathname === "/create-video" ? "Inter-Bold" : "Inter-Regular" }}
                             >
                                 Sign In
                             </Link>
                         </div>
                         <div className="nav-item popup-avatar-content d-xl-none d-block">
-                            <Button padding='12px 22px' text="Sign up" />
+                            <Button onClick={handleNext} padding='12px 22px' text="Sign up" />
                         </div>
                         <button className="navbar-toggler border-0 header-navbar-btn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span className="navbar-toggler-icon navbar-s-icon"></span>
@@ -84,7 +84,7 @@ const MainHeader = ({ display = "block" }) => {
                                     </Link></li>
                                 <li style={{ display: display }} className='d-xl-block d-none '>
                                     <Link
-                                        className="nav-link text-black d-flex gap-2 text-decoration-none "
+                                        className="nav-link d-flex gap-2 text-decoration-none "
                                         to="/signin"
                                         style={{ fontFamily: navi.pathname === "/create-video" ? "Inter-Bold" : "Inter-Regular", color: "#007BFF" }}
                                     >
