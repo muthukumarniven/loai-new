@@ -46,8 +46,8 @@ const Profile = () => {
                 }}
             />
             <div className="banner-content-container mt-5">
-                <div className='u-photo-section-container mb-5'>
-                    <div className="profile-section">
+                <div className='u-photo-section-container mb-md-5 mb-sm-3 mb-3'>
+                    <div className="profile-section p-0">
                         {/* Profile Content */}
                         <div className="profile-details">
                             <img
@@ -66,7 +66,7 @@ const Profile = () => {
                         </div>
                     </div>
                     <div>
-                        <div className='d-flex gap-2 flex-column mt-5'>
+                        <div className='d-flex gap-2 flex-column mt-md-5 mt-sm-4 mt-3 '>
                             <label className='audio-video-text-content' htmlFor="fullName">Full Name</label>
                             <Input onChange={handleFullNameChange} value={fullName} id="fullName" marginTop='0' />
                         </div>
