@@ -145,6 +145,7 @@ const AudioVideo = () => {
                                         >
                                             &times;
                                         </button>
+                                        
                                         {fileName.type.startsWith("audio") && (
                                             <audio
                                                 controls
@@ -155,14 +156,15 @@ const AudioVideo = () => {
                                             </audio>
                                         )}
                                         {fileName.type.startsWith("video") && (
-                                            <video className='h-100 w-100'
+                                            <video 
                                                 controls
                                                 src={URL.createObjectURL(fileName)}
-                                                style={{ width: "100%" }}
+                                                style={{ width: "100%",maxWidth:"400px",height:"100%",maxHeight:"400px" }}
                                             >
                                                 Your browser does not support the video element.
                                             </video>
                                         )}
+                                        <p className='mb-0'>This is your video preview</p>
                                     </div>
                                 </div>
                             )}
@@ -201,7 +203,6 @@ const AudioVideo = () => {
                                                 style={liststyle}
                                             />
                                         </div>
-
                                         <div style={{ position: 'relative', marginBottom: '20px', maxWidth: '220px', width: "100%" }}>
                                             <Select
                                                 options={ageOptions}
@@ -216,7 +217,6 @@ const AudioVideo = () => {
                                                 style={liststyle}
                                             />
                                         </div>
-
                                         <div style={{ position: 'relative', marginBottom: '20px', maxWidth: '220px', width: "100%" }}>
                                             <Select
                                                 options={genderOptions}
@@ -232,11 +232,7 @@ const AudioVideo = () => {
                                             />
                                         </div>
                                     </div>
-
-
                                     <p style={{ color: "#7D7D7D" }} className='audio-video-text-content text-start'>* Voices Powered by ElevenLabs</p>
-
-
                                     <div className='popup-scroller-conatiner' style={{ height: "400px" }}>
                                         <a href='#!' className="d-flex align-items-center justify-content-between audio-video-play-option text-decoration-none text-black">
                                             <div className="d-flex flex-column gap-2">
@@ -308,17 +304,11 @@ const AudioVideo = () => {
                                             </div>
                                             <img src={Images.playButton} alt="Play Button" />
                                         </a>
-
-
                                     </div>
-
                                     <Button onClick={handleNext} marginTop={"20px"} text="Submit" />
-
                                 </div>
                             </div>
                         )}
-
-
                         <div className='d-flex align-items-center justify-content-center flex-column mt-5'>
                             <p className='audio-video-text-content '>No worries if you don’t have an audio or video file, we have plenty of voices to choose from.</p>
                             <p style={{ color: "#7D7D7D" }} className='audio-video-text-content'>* Voices Powered by ElevenLabs</p>
@@ -326,7 +316,6 @@ const AudioVideo = () => {
                     </div>
                 </div>
             </div>
-
             <Footer />
         </div>
 
@@ -356,14 +345,12 @@ const customStyles = {
     }),
     valueContainer: (base) => ({
         ...base,
-        paddingLeft: '50px', // Adjust padding to make space for the icon
+        paddingLeft: '50px',
     }),
     placeholder: (base) => ({
         ...base,
         fontSize: '16px',
         color: '#333',
-        // zIndex: 999
-
     }),
     dropdownIndicator: (base) => ({
         ...base,

@@ -382,6 +382,11 @@ cursor: pointer;
   padding: 20px 30px;
   border-radius: 8px;
   text-align: center;
+  display: flex
+;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 
 .popup-content h4 {
@@ -454,7 +459,17 @@ cursor: pointer;
 .resend-code-text{color: #C2C2C2;font-size: 14px; font-family: "Poppins-Medium";}
 
 .verify-time-content p{color: #007BFF;font-size: 19px;font-family: "Inter-Bold";margin-bottom: 0;}
-
+.notification-dot-header{ 
+  position: absolute;
+  top: 26%;
+  right: 1%;
+  width: 8px;
+  height: 8px;
+  background: red;
+  border-radius: 50%;
+  /* bottom: 107%; */
+  left: 53.7%;
+}
 
 
 @media (max-width: 1200px) {.avaor-card-img { flex: 1 1 calc(32.33% - 1rem); max-width: calc(32.33% - 1rem);} .app-download-platform img{width: 9rem !important; height: 3rem !important;} .loai-web-logo img{ width: 18rem;}.profile-home img{width: 2.6rem; height: 2.6rem;} .header-nav-items li a{font-size: 16px;}}

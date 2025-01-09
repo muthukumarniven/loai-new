@@ -66,8 +66,9 @@ const Header = () => {
                     <Link to="/home" className="navbar-brand loai-web-logo d-sm-none d-block" href="#"><img style={{ width: "100%", height: "100%", maxWidth: "50px", maxHeight: "50px" }} src={Images.logoSm} /></Link>
                     <div className="d-flex align-items-center gap-md-2 gap-1">
                         <div className="nav-item d-xl-none d-block" ref={mobilePopupRef}>
-                            <Link className="nav-link" to="#" onClick={toggleMobilePopup}>
+                            <Link className="nav-link position-relative" to="#" onClick={toggleMobilePopup}>
                                 <img src={Images.notificationBell} alt="Notifications" />
+                                <div class="notification-dot-header"></div>
                             </Link>
                             {showMobilePopup && (
                                 <div className="notification-popup">
@@ -201,8 +202,9 @@ const Header = () => {
 
 
                                 <li className="nav-item d-xl-block d-none" ref={desktopPopupRef}>
-                                    <a className="nav-link" href="#" onClick={toggleDesktopPopup}>
+                                    <a className="nav-link position-relative" href="#" onClick={toggleDesktopPopup}>
                                         <img src={Images.notificationBell} alt="Notifications" />
+                                        <div class="notification-dot-header"></div>
                                     </a>
                                     {showDesktopPopup && (
                                         <div className="notification-popup">

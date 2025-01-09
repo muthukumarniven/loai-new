@@ -4,12 +4,12 @@ import Footer from '../components/Footer';
 import Images from '../assets/Images'
 import Button from '../components/Button';
 import TabHeader from '../components/TabHeader';
-import { useNavigate } from "react-router-dom"; // Import useNavigate
+import { useNavigate } from "react-router-dom"; 
 
 
 const CreateVideo = () => {
     const [fileName, setFileName] = useState(null);
-    const navigate = useNavigate(); // Initialize useNavigate
+    const navigate = useNavigate(); 
 
 
     const handleFileChange = (event) => {
@@ -23,7 +23,7 @@ const CreateVideo = () => {
 
 
     const handleNext = () => {
-        navigate("/input-text"); // Navigate to the "Next" screen
+        navigate("/input-text"); 
     };
     return (
         <div className='main-header-content'>

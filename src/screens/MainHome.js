@@ -45,11 +45,10 @@ const MainHome = () => {
                             <div className='d-flex align-items-center justify-content-center get-app-container'>
                                 <div className='lets-go-container'>
                                     <h1 className='mb-4 text-center fw-bolder' style={{ fontSize: "36px", lineHeight: "39px", }} >Get the App</h1>
-                                    <div className='d-flex align-items-center justify-content-center flex-wrap gap-3'>
+                                      <div className='d-flex align-items-center justify-content-center flex-wrap gap-3'>
                                         <Link href='#!'><img style={{ width: "276px", height: "83px" }} src={Images.appStore} alt="appStore" /></Link>
                                         <Link href='#!'><img style={{ width: "276px", height: "83px" }} src={Images.googlePlay} alt="googlePlay" /></Link>
                                     </div>
-
                                 </div>
                             </div>
                         </div>
