@@ -385,7 +385,7 @@ cursor: pointer;
   display: flex
 ;
   flex-wrap: wrap;
-  align-items: center;
+  /* align-items: center; */
   justify-content: center;
 }
 
@@ -467,7 +467,6 @@ cursor: pointer;
   height: 8px;
   background: red;
   border-radius: 50%;
-  /* bottom: 107%; */
   left: 53.7%;
 }
 
