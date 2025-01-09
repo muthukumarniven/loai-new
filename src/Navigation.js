@@ -24,6 +24,7 @@ import IndivitualScreen from './screens/IndivitualScreen';
 import MainHome from './screens/MainHome';
 import SignUp from './screens/SignUp';
 import SignIn from './screens/SignIn';
+import ForgotPassword from './screens/ForgotPassword';
 
 
 export default function Navigation() {
@@ -55,6 +56,7 @@ export default function Navigation() {
                     <Route path='/main-home' element={<MainHome />} />
                     <Route path='/signup' element={<SignUp />} />
                     <Route path='/signin' element={<SignIn/>} />
+                    <Route path='/forgot-password' element={<ForgotPassword/>} />
                 </Routes>
             </BrowserRouter>
         </>
