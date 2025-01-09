@@ -35,7 +35,7 @@ export default function Navigation() {
         <>
             <BrowserRouter>
                 <Routes>
-                    <Route path='/' element={<Home />} />
+                    <Route path='/home' element={<Home />} />
                     <Route path='/create-video' element={<CreateVideo />} />
                     <Route path='/input-text' element={<InputText />} />
                     <Route path='/audio-video' element={<AudioVideo />} />
@@ -56,13 +56,13 @@ export default function Navigation() {
                     <Route path='/transcation-histoy' element={<TranscationHistory />} />
                     <Route path='/notification' element={<Notification />} />
                     <Route path='/indivitual-screen' element={<IndivitualScreen />} />
-                    <Route path='/main-home' element={<MainHome />} />
+                    <Route path='/' element={<MainHome />} />
                     <Route path='/signup' element={<SignUp />} />
                     <Route path='/signin' element={<SignIn />} />
                     <Route path='/forgot-password' element={<ForgotPassword />} />
                     <Route path='/new-password' element={<NewPassword />} />
                     <Route path='/signup-verify' element={<SignUpVerify />} />
-                    <Route path='/forgot-verification' element={<FofgotVerification />} />
+                    <Route path='/forgot-verification' element={<FofgotVerification/>} />
                 </Routes>
             </BrowserRouter>
         </>

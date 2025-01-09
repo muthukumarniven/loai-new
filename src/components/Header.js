@@ -55,15 +55,15 @@ const Header = () => {
     const navigate = useNavigate();
 
     const handleNext = () => {
-        navigate("/main-home");
+        navigate("/");
     };
 
     return (
         <>
             <nav className="navbar navbar-expand-xl bg-body-tertiary shadow-sm">
                 <div className="container-fluid px-xl-5 px-3">
-                    <Link to="/" className="navbar-brand loai-web-logo d-sm-block d-none" href="#"><img src={Images.loaiLogo} /></Link>
-                    <Link to="/" className="navbar-brand loai-web-logo d-sm-none d-block" href="#"><img style={{ width: "100%", height: "100%", maxWidth: "50px", maxHeight: "50px" }} src={Images.logoSm} /></Link>
+                    <Link to="/home" className="navbar-brand loai-web-logo d-sm-block d-none" href="#"><img src={Images.loaiLogo} /></Link>
+                    <Link to="/home" className="navbar-brand loai-web-logo d-sm-none d-block" href="#"><img style={{ width: "100%", height: "100%", maxWidth: "50px", maxHeight: "50px" }} src={Images.logoSm} /></Link>
                     <div className="d-flex align-items-center gap-md-2 gap-1">
                         <div className="nav-item d-xl-none d-block" ref={mobilePopupRef}>
                             <Link className="nav-link" to="#" onClick={toggleMobilePopup}>
@@ -164,7 +164,7 @@ const Header = () => {
                                 <li>
                                     <Link
                                         className="nav-link text-black d-flex gap-2 text-decoration-none"
-                                        to="/"
+                                        to="/home"
                                         style={{ fontFamily: navi.pathname === "/" ? "Inter-Bold" : "Inter-Regular" }} >
                                         Home
                                     </Link>

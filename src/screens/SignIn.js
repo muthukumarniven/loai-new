@@ -18,7 +18,7 @@ const SignIn = () => {
     const navigate = useNavigate(); // Initialize useNavigate
 
     const handleNext = () => {
-        navigate("/"); // Navigate to the "Next" screen
+        navigate("/home"); // Navigate to the "Next" screen
     };
     return (
         <>

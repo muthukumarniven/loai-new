@@ -47,7 +47,7 @@ const MainHeader = ({ display = "block" }) => {
                                 <li style={{ display: display }}>
                                     <Link
                                         className="nav-link text-black d-flex gap-2 text-decoration-none"
-                                        to="/main-home"
+                                        to="/"
                                         style={{ fontFamily: navi.pathname === "/main-home" ? "Inter-Bold" : "Inter-Regular" }}
                                     >
                                         Home
