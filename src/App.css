@@ -412,7 +412,6 @@ cursor: pointer;
 .get-app-container{margin-top: 78px;}
 .wellness-images{margin-top: 57px;}
 .wellness-images img{    width: 33.33%; padding: 0 7px;}
-
 .why-lovedone-header{background-color: #E1F7E3;}
 
 
@@ -446,9 +445,17 @@ cursor: pointer;
 
 
 
-  .google-login-conatiner{border: 1px solid #E9EAF0;padding: 10px 29px; border-radius: 8px;}
-  .google-login-conatiner img{width: 26px; height: 26px;}
-  .google-login-conatiner p{font-size: 14px;font-family: "Poppins-Regular";color: #000;}
+.google-login-conatiner{border: 1px solid #E9EAF0;padding: 10px 29px; border-radius: 8px;}
+.google-login-conatiner img{width: 26px; height: 26px;}
+.google-login-conatiner p{font-size: 14px;font-family: "Poppins-Regular";color: #000;}
+.signup-verfy-mail{font-size: 21px;font-family: "Poppins-Regular";}
+.spam-folder-inform-text{font-size: 16px;color: #7D7D7D;font-family: "Poppins-Regular";}
+.receive-code{font-size: 14px; font-family: "Poppins-Medium";}
+.resend-code-text{color: #C2C2C2;font-size: 14px; font-family: "Poppins-Medium";}
+
+.verify-time-content p{color: #007BFF;font-size: 19px;font-family: "Inter-Bold";margin-bottom: 0;}
+
+
 
 @media (max-width: 1200px) {.avaor-card-img { flex: 1 1 calc(32.33% - 1rem); max-width: calc(32.33% - 1rem);} .app-download-platform img{width: 9rem !important; height: 3rem !important;} .loai-web-logo img{ width: 18rem;}.profile-home img{width: 2.6rem; height: 2.6rem;} .header-nav-items li a{font-size: 16px;}}
 @media (max-width: 992px) {.avaor-card-img { flex: 1 1 calc(33.33% - 1rem); max-width: calc(33.33% - 1rem);}  .app-download-platform img{width: 6rem !important; height: 2rem !important;} .loai-web-logo img{ width: 15rem;}.profile-home img{width: 2.5rem; height: 2.5rem; }} 
@@ -456,7 +463,7 @@ cursor: pointer;
 .avaor-card-img { flex: 1 1 calc(33.33% - 1rem); max-width: calc(33.33% - 1rem);} .footer { padding: 15px; } .footer div .footer-list-content a { font-size: 14px; } .footer div .social-media-list-items .app-download-platform { max-width: 150px; height: auto; } .copy-rights-content img { width: 150px; height: auto; }
 .loai-web-logo img{ width: 13rem;}.profile-home img{width: 2.3rem; height: 2.3rem;} .header-navbar-btn[aria-expanded="false"] .navbar-s-icon {width: 1.2rem !important; height: 1.2rem !important;} .header-navbar-btn[aria-expanded="true"] .navbar-s-icon {width: 1.2rem !important; height: 1.2rem !important;}   .banner-text-content { padding: 0 20% 28px 0;}.banner-text-content h1 {font-size: 34px;margin-top: 0;} } 
 @media (max-width: 600px) { .get-app-container{margin-top: 30px;} .wellness-images{margin-top: 28px;} .not-found-img{width: 300px;}  .avaor-card-img { flex: 1 1 calc(50.33% - 1rem); max-width: calc(50.33% - 1rem);} .loai-web-logo img{ width: 10rem;}.profile-home img{width: 2rem; height: 2rem;}.notification-bell-hom img{width: 0.5rem !important; height: 0.5rem !important;}} 
-@media (max-width: 575.98px) {  .help-one-img{width: 300px; height: 300px;}.delete-description { font-size: 0.9rem;}
+@media (max-width: 575.98px) { .spam-folder-inform-text{font-size: 12px;} .signup-verfy-mail{font-size: 14px;} .help-one-img{width: 300px; height: 300px;}.delete-description { font-size: 0.9rem;}
 .banner-text-content{padding-right: 0; }  .avaor-card-img { flex: 1 1 calc(100% - 0rem); max-width: calc(100% - 0rem);} }
 @media (max-width: 425.98px){ .profile-image { width: 80px; height: 80px; } .profile-name { font-size: 1rem; } .profile-email { font-size: 0.8rem; } .profile-edit Button { width: 100%; }
 .count-content-text p{font-size: 13px;}.lets-go-container h1{font-size: 16px !important;}.u-photo-section-container{padding: 25px;}.upload-pic-container{margin-top: 40px;}}

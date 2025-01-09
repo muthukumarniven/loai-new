@@ -16,9 +16,9 @@ const ForgotPassword = () => {
     return (
         <>
             <MainHeader display='none' />
-            <div style={{height:"100vh"}} className="row w-100">
+            <div style={{height:"100vh"}} className="row w-100 m-0">
                 <div className="col-12 d-flex align-items-center justify-content-center">
-                    <div style={{ maxWidth: "525px" }} className="banner-content-container">
+                    <div style={{ maxWidth: "90%", width: "100%", maxWidth: "525px" }} className="banner-content-container">
                         <div className='u-photo-section-container mb-5 mt-5'>
                             <div className='lets-go-container text-center'>
                                 <h1 style={{ fontSize: "24px" }}>Forgot Password
