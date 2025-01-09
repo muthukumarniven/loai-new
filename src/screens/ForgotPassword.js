@@ -30,8 +30,8 @@ const ForgotPassword = () => {
             <div style={{ height: "100vh" }} className="row w-100 m-0">
                 <div className="col-12 d-flex align-items-center justify-content-center">
                     <div style={{ maxWidth: "90%", width: "100%", maxWidth: "525px" }} className="banner-content-container">
-                        <div className='u-photo-section-container mb-5 mt-5'>
-                            <div className='lets-go-container text-center mt-md-0 mt-sm-3 mt-4'>
+                    <div style={{borderRadius:"13px", boxShadow:"0 4px 25px 0 rgba(0,0,0,.1)"}} className='u-photo-section-container mb-5 mt-5'>
+                    <div className='lets-go-container text-center mt-md-0 mt-sm-3 mt-4'>
                                 <h1 style={{ fontSize: "24px" }}>Forgot Password
                                 </h1>
                             </div>

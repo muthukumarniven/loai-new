@@ -40,8 +40,8 @@ const FofgotVerification = () => {
                         className="banner-content-container"
                         style={{ maxWidth: "525px", width: "100%" }}
                     >
-                        <div className="u-photo-section-container mb-5 mt-5">
-                            <div className="lets-go-container text-center mt-md-0 mt-sm-3 mt-4">
+                        <div style={{borderRadius:"13px", boxShadow:"0 4px 25px 0 rgba(0,0,0,.1)"}} className='u-photo-section-container mb-5 mt-5'>
+                        <div className="lets-go-container text-center mt-md-0 mt-sm-3 mt-4">
                                 <h1 style={{ fontSize: "24px" }}>Verify Code</h1>
                                 <p className="signup-verfy-mail mt-4">
                                     Code sent to xy****@gmail.com and +91*******530
