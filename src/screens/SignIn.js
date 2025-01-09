@@ -26,12 +26,12 @@ const SignIn = () => {
         <div style={{ height: "100vh" }} className="row w-100 m-0">
                 <div className="col-12 d-flex align-items-center justify-content-center">
                     <div style={{ maxWidth: "90%", width: "100%", maxWidth: "525px" }} className="banner-content-container">
-                        <div className='u-photo-section-container mb-5 mt-5'>
-                            <div className='lets-go-container text-center'>
+                        <div className='u-photo-section-container mb-5 mt-md-5 mt-sm-4 mt-4'>
+                            <div className='lets-go-container text-center mt-3'>
                                 <h1 style={{ fontSize: "24px" }}> Sign In
                                 </h1>
                             </div>
-                            <div className="d-flex flex-wrap gap-3 mt-5">
+                            <div className="d-flex flex-wrap gap-3 mt-md-5 mt-sm-4 mt-4">
 
                                 <Link className="d-flex align-items-center justify-content-center gap-3 google-login-conatiner text-decoration-none w-100">
                                     <img src={Images.google} alt="download" />

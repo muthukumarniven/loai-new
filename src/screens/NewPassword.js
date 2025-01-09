@@ -29,7 +29,7 @@ const NewPassword = () => {
         <div style={{ height: "100vh" }} className="row w-100">
                 <div className="col-12 d-flex align-items-center justify-content-center">
                     <div style={{ maxWidth: "525px" }} className="banner-content-container">
-                        <div className='u-photo-section-container mb-5 mt-5'>
+                        <div className='u-photo-section-container mb-5 mt-md-5 mt-sm-4 mt-4'>
                             <div className='lets-go-container text-center'>
                                 <h1 style={{ fontSize: "24px" }}>Create a New Password
                                 </h1>
