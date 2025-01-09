@@ -2,14 +2,9 @@ import React, { useRef, useEffect } from 'react';
 import MainHeader from '../components/MainHeader';
 import Button from '../components/Button';
 import { Link } from 'react-router-dom';
-import { useNavigate } from "react-router-dom"; // Import useNavigate
+import { useNavigate } from "react-router-dom";
 
-const SignUpVerify = () => {
-    const navigate = useNavigate(); // Initialize useNavigate
-
-    const handleNext = () => {
-        navigate("/"); // Navigate to the "Next" screen
-    };
+const FofgotVerification = () => {
     const inputRefs = useRef([]);
 
     useEffect(() => {
@@ -21,7 +16,7 @@ const SignUpVerify = () => {
     const handleInput = (e, index) => {
         const value = e.target.value;
         if (value.length === 1 && index < inputRefs.current.length - 1) {
-            inputRefs.current[index + 1].focus();
+            inputRefs.current[index + 1].focus(); 
         }
     };
 
@@ -31,6 +26,11 @@ const SignUpVerify = () => {
         }
     };
 
+    const navigate = useNavigate(); 
+
+    const handleNext = () => {
+        navigate("/"); 
+    };
     return (
         <>
             <MainHeader display="none" />
@@ -80,10 +80,8 @@ const SignUpVerify = () => {
                                 ))}
                             </div>
 
-                            {/* Submit Button */}
                             <Button onClick={handleNext} text="Submit" />
 
-                            {/* Resend Code Section */}
                             <div className="d-flex align-items-center justify-content-center mt-3">
                                 <span className="receive-code">
                                     Didn’t receive code?{" "}
@@ -94,8 +92,7 @@ const SignUpVerify = () => {
                     </div>
                 </div>
             </div>
-        </>
-    );
-};
+        </>)
+}
 
-export default SignUpVerify;
+export default FofgotVerification

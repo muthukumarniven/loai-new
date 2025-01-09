@@ -27,6 +27,7 @@ import SignIn from './screens/SignIn';
 import ForgotPassword from './screens/ForgotPassword';
 import NewPassword from './screens/NewPassword';
 import SignUpVerify from './screens/SignUpVerify';
+import FofgotVerification from './screens/FofgotVerification';
 
 
 export default function Navigation() {
@@ -61,6 +62,7 @@ export default function Navigation() {
                     <Route path='/forgot-password' element={<ForgotPassword />} />
                     <Route path='/new-password' element={<NewPassword />} />
                     <Route path='/signup-verify' element={<SignUpVerify />} />
+                    <Route path='/forgot-verification' element={<FofgotVerification />} />
                 </Routes>
             </BrowserRouter>
         </>

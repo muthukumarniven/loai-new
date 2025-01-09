@@ -4,6 +4,7 @@ import { Link } from "react-router";
 import Button from "../components/Button";
 import Images from "../assets/Images";
 import Input from '../components/Input'
+import { useNavigate } from "react-router-dom";
 
 
 const ForgotPassword = () => {
@@ -12,6 +13,11 @@ const ForgotPassword = () => {
 
     const togglePasswordVisibility = () => {
         setShowPassword(!showPassword);
+    };
+    const navigate = useNavigate(); 
+
+    const handleNext = () => {
+        navigate("/forgot-verification"); 
     };
     return (
         <>
@@ -30,7 +36,7 @@ const ForgotPassword = () => {
                                 <Input type="email" id="email" marginTop='0' placeholder='Enter Phone Number or Email' />
                                 <p className="country-content-text mb-0">e.g. +1******1234 or user@example.com</p>
                             </div>
-                            <Button marginTop="23px" text="Submit" />
+                            <Button onClick={handleNext} marginTop="23px" text="Submit" />
                             <div className="mt-3">
                                 <span className="account-details-text-content">Already have an account?<Link to="/signin" className="forgot-password-text text-decoration-none "> Sign In</Link></span>
                             </div>

@@ -3,10 +3,18 @@ import Images from '../assets/Images'
 import { Link } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
 import Button from '../components/Button';
+import { useNavigate } from "react-router-dom";
 
-const MainHeader = ({display="block"}) => {
+
+const MainHeader = ({ display = "block" }) => {
     const navi = useLocation();
     const mobilePopupRef = useRef(null);
+
+    const navigate = useNavigate();
+
+    const handleNext = () => {
+        navigate("/signup");
+    };
 
     return (
         <>
@@ -36,7 +44,7 @@ const MainHeader = ({display="block"}) => {
                     <div className="collapse navbar-collapse align-items-start justify-content-end" id="navbarSupportedContent">
                         <div className="d-flex" role="search">
                             <ul className="navbar-nav me-auto mb-2 mb-lg-0 header-nav-items gap-xl-2 gap-3 align-items-xl-center align-items-start flex-wrap">
-                                <li style={{display:display}}>
+                                <li style={{ display: display }}>
                                     <Link
                                         className="nav-link text-black d-flex gap-2 text-decoration-none"
                                         to="/main-home"
@@ -45,7 +53,7 @@ const MainHeader = ({display="block"}) => {
                                         Home
                                     </Link>
                                 </li>
-                                <li style={{display:display}}>
+                                <li style={{ display: display }}>
                                     <Link
                                         className="nav-link text-black d-flex gap-2 text-decoration-none"
                                         to=""
@@ -54,7 +62,7 @@ const MainHeader = ({display="block"}) => {
                                         About
                                     </Link>
                                 </li>
-                                <li style={{display:display}}>
+                                <li style={{ display: display }}>
                                     <Link
                                         className="nav-link text-black d-flex gap-2 text-decoration-none"
                                         to=""
@@ -63,10 +71,10 @@ const MainHeader = ({display="block"}) => {
                                         How it Works
                                     </Link>
                                 </li>
-                                <li style={{display:display}}>
+                                <li style={{ display: display }}>
                                     <Link className="nav-link text-black d-flex gap-2 text-decoration-none" to="" style={{ fontFamily: navi.pathname === "" ? "Inter-Bold" : "Inter-Regular" }}>Sample Videos</Link>
                                 </li>
-                                <li style={{display:display}}   >
+                                <li style={{ display: display }}   >
                                     <Link
                                         className="nav-link text-black d-flex gap-2 text-decoration-none"
                                         to=""
@@ -74,17 +82,17 @@ const MainHeader = ({display="block"}) => {
                                     >
                                         Support
                                     </Link></li>
-                                <li style={{display:display}} className='d-xl-block d-none'>
+                                <li style={{ display: display }} className='d-xl-block d-none '>
                                     <Link
-                                        className="nav-link text-black d-flex gap-2 text-decoration-none"
-                                        to=""
-                                        style={{ fontFamily: navi.pathname === "/create-video" ? "Inter-Bold" : "Inter-Regular" }}
+                                        className="nav-link text-black d-flex gap-2 text-decoration-none "
+                                        to="/signin"
+                                        style={{ fontFamily: navi.pathname === "/create-video" ? "Inter-Bold" : "Inter-Regular", color: "#007BFF" }}
                                     >
                                         Sign In
                                     </Link>
                                 </li>
-                                <li style={{display:display}} className='d-xl-block d-none'>
-                                    <Button padding='12px 22px' text="Sign up" />
+                                <li style={{ display: display }} className='d-xl-block d-none'>
+                                    <Button onClick={handleNext} padding='12px 22px' text="Sign up" />
                                 </li>
 
                             </ul>

@@ -3,6 +3,7 @@ import Images from '../assets/Images'
 import { Link } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
 import Button from './Button';
+import { useNavigate } from "react-router-dom";
 
 const Header = () => {
     const navi = useLocation();
@@ -12,7 +13,6 @@ const Header = () => {
     const [showSignOutPopup, setShowSignOutPopup] = useState(false);
 
     const menuRef = useRef(null);
-
     const toggleMenu = () => {
         setIsOpen(!isOpen);
     };
@@ -23,14 +23,11 @@ const Header = () => {
                 setIsOpen(false);
             }
         };
-
         document.addEventListener('mousedown', handleClickOutside);
         return () => {
             document.removeEventListener('mousedown', handleClickOutside);
         };
     }, []);
-
-
 
     const mobilePopupRef = useRef(null);
     const desktopPopupRef = useRef(null);
@@ -55,7 +52,11 @@ const Header = () => {
     }, []);
     const toggleSignOutPopup = () => setShowSignOutPopup(!showSignOutPopup);
 
+    const navigate = useNavigate();
 
+    const handleNext = () => {
+        navigate("/main-home");
+    };
 
     return (
         <>
@@ -256,7 +257,6 @@ const Header = () => {
                                                     </Link>
                                                 </li>
 
-
                                                 <li onClick={toggleSignOutPopup} style={{ cursor: 'pointer' }}>
                                                     <img src={Images.signOutIcon} alt="Sign Out Icon" />
                                                     <span className='profile-popup-list'>Sign out</span>
@@ -277,7 +277,7 @@ const Header = () => {
                                                                         <button onClick={toggleSignOutPopup} className="btn-modal choose-btn-content rounded-5" >
                                                                             Cancel
                                                                         </button>
-                                                                        <Button borderRadius='40px' width='50%' text="Sign Out" />
+                                                                        <Button onClick={handleNext} borderRadius='40px' width='50%' text="Sign Out" />
                                                                     </div>
                                                                 </div>
                                                             </div>

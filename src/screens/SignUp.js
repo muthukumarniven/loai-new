@@ -4,10 +4,18 @@ import Input from '../components/Input'
 import { Link } from "react-router";
 import Button from "../components/Button";
 import Images from "../assets/Images";
+import { useNavigate } from "react-router-dom"; // Import useNavigate
+
 
 const SignUp = () => {
-
     const [showPassword, setShowPassword] = useState(false);
+
+    const navigate = useNavigate(); // Initialize useNavigate
+
+    const handleNext = () => {
+        navigate("/signup-verify"); // Navigate to the "Next" screen
+    };
+
 
     const togglePasswordVisibility = () => {
         setShowPassword(!showPassword);
@@ -18,7 +26,7 @@ const SignUp = () => {
             <MainHeader display='none' />
             <div style={{ height: "100vh" }} className="row w-100 m-0">
                 <div className="col-12 d-flex align-items-center justify-content-center">
-                    <div  style={{ maxWidth: "90%", width: "100%", maxWidth: "525px" }} className="banner-content-container">
+                    <div style={{ maxWidth: "90%", width: "100%", maxWidth: "525px" }} className="banner-content-container">
                         <div className='u-photo-section-container mb-5 mt-md-5 mt-sm-4 mt-4'>
                             <div className='lets-go-container text-center'>
                                 <h1 style={{ fontSize: "24px" }}>Sign Up to get started!
@@ -81,7 +89,7 @@ const SignUp = () => {
                                 <span className="country-content-text">By continuing you agree to our<Link className="forgot-password-text"> Terms of Service</Link> and  <Link className="forgot-password-text">Privacy Policy.</Link></span>
                             </div>
 
-                            <Button marginTop="23px" text="Sign Up" />
+                            <Button onClick={handleNext} marginTop="23px" text="Sign Up" />
                             <div className="mt-3">
                                 <span className="account-details-text-content">Already have an account?<Link to="/signin" className="forgot-password-text text-decoration-none "> Sign In</Link></span>
                             </div>

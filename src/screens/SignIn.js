@@ -4,12 +4,20 @@ import Input from '../components/Input'
 import { Link } from "react-router";
 import Button from "../components/Button";
 import Images from "../assets/Images";
+import { useNavigate } from "react-router-dom"; // Import useNavigate
+
 const SignIn = () => {
 
     const [showPassword, setShowPassword] = useState(false);
 
     const togglePasswordVisibility = () => {
         setShowPassword(!showPassword);
+    };
+
+    const navigate = useNavigate(); // Initialize useNavigate
+
+    const handleNext = () => {
+        navigate("/"); // Navigate to the "Next" screen
     };
     return (
         <>
@@ -76,7 +84,7 @@ const SignIn = () => {
                             <div className="d-flex align-items-center justify-content-end mt-3">
                                 <Link to="/forgot-password" className="forgot-password-text">Forgot Password?</Link>
                             </div>
-                            <Button marginTop="23px" text="Sign In" />
+                            <Button onClick={handleNext} marginTop="23px" text="Sign In" />
                             <div className="mt-3">
                                 <span className="account-details-text-content">Don’t have an account?<Link to="/signup" className="forgot-password-text text-decoration-none "> Sign Up</Link></span>
                             </div>
