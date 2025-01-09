@@ -8,14 +8,7 @@ import Footer from '../components/Footer';
 const MainHome = () => {
     const videoRef = useRef(null);
     const [isPlaying, setIsPlaying] = useState(false);
-    const togglePlayPause = () => {
-        if (isPlaying) {
-            videoRef.current.pause();
-        } else {
-            videoRef.current.play();
-        }
-        setIsPlaying(!isPlaying);
-    };
+
     return (
 
         <div className='main-header-content'>
@@ -75,21 +68,7 @@ const MainHome = () => {
                                 >
                                     <source src={Video} type="video/mp4" />
                                 </video>
-                                {!isPlaying && (
-                                    <img
-                                        src={Images.pause}
-                                        alt="Pause"
-                                        onClick={togglePlayPause}
-                                        style={{
-                                            position: 'absolute',
-                                            top: '50%',
-                                            left: '50%',
-                                            transform: 'translate(-50%, -50%)',
-                                            cursor: 'pointer',
-                                            zIndex: 1,
-                                        }}
-                                    />
-                                )}
+                               
                             </div>
 
                             <div className='d-flex wellness-images'>
