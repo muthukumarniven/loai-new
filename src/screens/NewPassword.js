@@ -26,7 +26,7 @@ const NewPassword = () => {
     return (
         <>
         <RegisterFlowHeader/>
-        <div style={{ height: "100vh" }} className="row w-100">
+        <div style={{ height: "100vh" }} className="row w-100 m-0">
                 <div className="col-12 d-flex align-items-center justify-content-center">
                     <div style={{ maxWidth: "525px" }} className="banner-content-container">
                     <div style={{borderRadius:"13px", boxShadow:"0 4px 25px 0 rgba(0,0,0,.1)"}} className='u-photo-section-container mb-5 mt-5'>
