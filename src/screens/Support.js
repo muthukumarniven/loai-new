@@ -95,7 +95,6 @@ const Support = () => {
                         <label className='audio-video-text-content' htmlFor="email">Email Address<span style={{ color: "red" }}>*</span></label>
                         <Input onChange={emailHandleChange} value={mailValue} type="email" id="email" marginTop='0' placeholder='' />
                     </div>
-
                     <div className="messageContainer d-flex gap-2 flex-column mt-4">
                         <label className='audio-video-text-content' htmlFor="message">Message<span style={{ color: "red" }}>*</span></label>
                         <textarea
@@ -106,11 +105,8 @@ const Support = () => {
                             className="messageInput"
                         />
                     </div>
-
-
                     <div className="d-flex flex-wrap align-items-center justify-content-between gap-4 mt-4">
                         <Button onClick={handleNext} fontFamily="Poppins-Medium" maxWidth="290px" borderRadius="0" textDecoration="underline" border="1px solid #E9EAF0" color="#6E7485" backgroundColor="#F5F7FA" text="How to Delete Account?" />
-
                         <div className="captcha-box">
                             <div className="captcha-checkbox">
                                 <input
@@ -128,26 +124,13 @@ const Support = () => {
                                     src={Images.captcha}
                                 />
                             </div>
-
                         </div>
                     </div>
-
                     <div className="d-flex align-items-center justify-content-end mt-4">
                         <Button width="170px" text="Submit" />
                     </div>
-
-
-
-
-
-
-
                 </div>
             </div>
-
-
-
-
             <Footer />
         </div>
     )

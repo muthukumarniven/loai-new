@@ -23,6 +23,7 @@ import Notification from './screens/Notification';
 import IndivitualScreen from './screens/IndivitualScreen';
 import MainHome from './screens/MainHome';
 import SignUp from './screens/SignUp';
+import SignIn from './screens/SignIn';
 
 
 export default function Navigation() {
@@ -53,6 +54,7 @@ export default function Navigation() {
                     <Route path='/indivitual-screen' element={<IndivitualScreen />} />
                     <Route path='/main-home' element={<MainHome />} />
                     <Route path='/signup' element={<SignUp />} />
+                    <Route path='/signin' element={<SignIn/>} />
                 </Routes>
             </BrowserRouter>
         </>

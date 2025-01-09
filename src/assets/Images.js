@@ -65,18 +65,17 @@ import shareHelp from './images/share-help.svg'
 import deleteConformation from './images/delete-conformation.svg'
 import stepOne from './images/step-one.png'
 import stepTwo from './images/step-two.svg'
-
 import NotFound from './images/not-found.svg'
 import download from './images/download.svg'
-
 import conformDelete from './images/delete.svg'
-
 import logoSm from './images/logo-sm.svg'
 import tick from './images/tick.svg'
-
 import bannerOne from './images/banner-1.png'
 import bannerTwo from './images/banner-2.png'
 import bannerThree from './images/banner-3.png'
+import google from './images/google.svg'
+import facebookLogin from './images/facebook.svg'
+import apple from './images/apple.svg'
 
 
 
@@ -90,6 +89,9 @@ import bannerThree from './images/banner-3.png'
 
 
 const Images = {
+    apple,
+    facebookLogin,
+    google,
     signOutIcon,
     transactionIcon,
     loaiLogo,
