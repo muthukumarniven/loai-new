@@ -466,7 +466,7 @@ cursor: pointer;
 @media (max-width: 575.98px) { .spam-folder-inform-text{font-size: 12px;} .signup-verfy-mail{font-size: 14px;} .help-one-img{width: 300px; height: 300px;}.delete-description { font-size: 0.9rem;}
 .banner-text-content{padding-right: 0; }  .avaor-card-img { flex: 1 1 calc(100% - 0rem); max-width: calc(100% - 0rem);} }
 @media (max-width: 425.98px){ .profile-image { width: 80px; height: 80px; } .profile-name { font-size: 1rem; } .profile-email { font-size: 0.8rem; } .profile-edit Button { width: 100%; }
-.count-content-text p{font-size: 13px;}.lets-go-container h1{font-size: 16px !important;}.u-photo-section-container{padding: 25px;}.upload-pic-container{margin-top: 40px;}}
+.count-content-text p{font-size: 13px;}.lets-go-container h1{font-size: 16px !important;}.u-photo-section-container{padding: 10px;}.upload-pic-container{margin-top: 40px;}}
 
 
 
