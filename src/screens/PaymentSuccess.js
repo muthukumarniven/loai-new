@@ -10,23 +10,6 @@ const PaymentSuccess = () => {
     const [isPlaying, setIsPlaying] = useState(false);
 
 
-    const handleVideoToggle = () => {
-        if (isPlaying) {
-            videoRef.current.pause();
-        } else {
-            videoRef.current.play();
-        }
-        setIsPlaying(!isPlaying);
-    };
-    const togglePlayPause = () => {
-        if (isPlaying) {
-            videoRef.current.pause();
-        } else {
-            videoRef.current.play();
-        }
-        setIsPlaying(!isPlaying);
-    };
-
 
     return (
         <div className='main-header-content'>
@@ -57,21 +40,6 @@ const PaymentSuccess = () => {
                                     <source src={Video} type="video/mp4" />
                                 </video>
 
-                                {!isPlaying && (
-                                    <img
-                                        src={Images.pause}
-                                        alt="Pause"
-                                        onClick={togglePlayPause}
-                                        style={{
-                                            position: 'absolute',
-                                            top: '50%',
-                                            left: '50%',
-                                            transform: 'translate(-50%, -50%)',
-                                            cursor: 'pointer',
-                                            zIndex: 1,
-                                        }}
-                                    />
-                                )}
                                 <Link><img
                                     src={Images.share}
                                     style={{
