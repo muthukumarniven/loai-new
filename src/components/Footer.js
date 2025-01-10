@@ -14,7 +14,7 @@ const Footer = () => {
                     <Link to="/support" > Support </Link>
                     <li><a href='#!'>Privacy Policy</a></li>
                     <li><a href='#!'>Terms & Condition</a></li>
-                </ul>
+                 </ul>
                 <ul className='d-flex list-unstyled gap-xl-5 gap-md-4 gap-sm-3 gap-3  flex-wrap d-flex align-items-center justify-content-center social-media-list-items pt-xl-4 pt-md-4 pt-sm-4 pt-4'>
                     <li><a className='app-download-platform' href='#!'><img src={Images.appStore} alt="appStore" /></a></li>
                     <li><a className='social-media-icon' href='#!'><img src={Images.facebook} alt="facebook" /></a></li>

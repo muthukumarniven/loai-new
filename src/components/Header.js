@@ -113,7 +113,6 @@ const Header = () => {
                                     <ul>
                                         <li>
                                             <Link className='text-decoration-none' to="/profile">
-
                                                 <img src={Images.profileIcon} alt="Profile Icon" />
                                                 <span className='profile-popup-list text-black' to="/profile">Profile</span>
                                             </Link>
@@ -124,8 +123,6 @@ const Header = () => {
                                                 <span className='profile-popup-list text-dark'>Transaction History</span>
                                             </Link>
                                         </li>
-
-
                                         <li onClick={toggleSignOutPopup} style={{ cursor: 'pointer' }}>
                                             <img src={Images.signOutIcon} alt="Sign Out Icon" />
                                             <span className='profile-popup-list'>Sign out</span>
@@ -145,7 +142,7 @@ const Header = () => {
                                                                     Cancel
                                                                 </button>
                                                                 <Button onClick={handleNext} borderRadius='40px' width='50%' text="Sign Out" />
-                                                                </div>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -182,7 +179,6 @@ const Header = () => {
                                 <li className="nav-item">
                                     <a className="nav-link" href="#">How it Works</a>
                                 </li>
-
                                 <li>
                                     <Link className="nav-link text-black d-flex gap-2 text-decoration-none" to="/sample-videos" style={{ fontFamily: navi.pathname === "/sample-videos" ? "Inter-Bold" : "Inter-Regular" }}>Sample Videos</Link>
                                 </li>
@@ -199,8 +195,6 @@ const Header = () => {
                                         <li className="mt-3"><Link className="text-decoration-none" to="/support" > <img src={Images.support} alt="Notifications" /> Support </Link></li>
                                     </ul>
                                 </li>
-
-
                                 <li className="nav-item d-xl-block d-none" ref={desktopPopupRef}>
                                     <a className="nav-link position-relative" href="#" onClick={toggleDesktopPopup}>
                                         <img src={Images.notificationBell} alt="Notifications" />
@@ -238,7 +232,6 @@ const Header = () => {
                                         </div>
                                     )}
                                 </li>
-
                                 <li className="nav-item popup-avatar-content d-xl-block d-none">
                                     <a className="nav-link profile-home" href="#" onClick={toggleMenu}>
                                         <img src={Images.profile} alt="Profile Avatar" className="avatar-image" />
@@ -258,12 +251,10 @@ const Header = () => {
                                                         <span className='profile-popup-list'>Transaction History</span>
                                                     </Link>
                                                 </li>
-
                                                 <li onClick={toggleSignOutPopup} style={{ cursor: 'pointer' }}>
                                                     <img src={Images.signOutIcon} alt="Sign Out Icon" />
                                                     <span className='profile-popup-list'>Sign out</span>
                                                 </li>
-
                                                 {/* Sign-out Confirmation Popup */}
                                                 {showSignOutPopup && (
                                                     <div className="signout-popup">
@@ -295,7 +286,6 @@ const Header = () => {
                     </div>
                 </div>
             </nav>
-
         </>
     )
 }

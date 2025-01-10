@@ -29,7 +29,7 @@ const PaymentTabHeader = () => {
                             src={navi.pathname === "/promocode" ? Images.promoActive : Images.promo}
                             alt="Input Text"
                         />
-                       Promotion Code
+                        Promotion Code
                     </Link>
                 </div>
                 <div
