@@ -2,6 +2,7 @@ import React from 'react'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import SubHeader from '../components/SubHeader'
+import Images from '../assets/Images';
 
 const Notification = () => {
     return (
@@ -52,6 +53,10 @@ const Notification = () => {
                 </div>
 
             </div>
+
+
+
+
             <Footer />
         </div>
     )
