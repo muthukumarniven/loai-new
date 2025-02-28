@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
 import Button from './Button';
 import { useNavigate } from "react-router-dom";
+import {toast} from 'react-toastify'
 
 const Header = () => {
     const navi = useLocation();
@@ -56,6 +57,7 @@ const Header = () => {
 
     const handleNext = () => {
         navigate("/");
+        toast.success("Sign Out Succesful")
     };
 
     return (

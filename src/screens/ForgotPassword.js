@@ -4,6 +4,7 @@ import Button from "../components/Button";
 import Input from '../components/Input'
 import { useNavigate } from "react-router-dom";
 import RegisterFlowHeader from '../components/RegisterFlowHeader';
+import {toast} from 'react-toastify'
 
 
 const ForgotPassword = () => {
@@ -17,6 +18,7 @@ const ForgotPassword = () => {
 
     const handleNext = () => {
         navigate("/forgot-verification");
+        toast.success("Code send Succesfully")
     };
 
 

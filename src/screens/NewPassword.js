@@ -5,6 +5,7 @@ import Input from '../components/Input'
 import { Link } from "react-router";
 import RegisterFlowHeader from '../components/RegisterFlowHeader';
 import { useNavigate } from "react-router-dom";
+import { toast } from 'react-toastify'
 
 
 const NewPassword = () => {
@@ -18,19 +19,21 @@ const NewPassword = () => {
     const toggleConfirmPasswordVisibility = () => {
         setShowConfirmPassword(!showConfirmPassword);
     };
-    const navigate = useNavigate(); 
+    const navigate = useNavigate();
 
     const handleNext = () => {
-        navigate("/signin"); 
+        navigate("/signin");
+        toast.success("Password Changed")
+
     };
     return (
         <>
-        <RegisterFlowHeader/>
-        <div style={{ height: "100vh" }} className="row w-100 m-0">
+            <RegisterFlowHeader />
+            <div style={{ height: "100vh" }} className="row w-100 m-0">
                 <div className="col-12 d-flex align-items-center justify-content-center">
                     <div style={{ maxWidth: "525px" }} className="banner-content-container">
-                    <div style={{borderRadius:"13px", boxShadow:"0 4px 25px 0 rgba(0,0,0,.1)"}} className='u-photo-section-container mb-5 mt-5'>
-                    <div className='lets-go-container text-center mt-md-0 mt-sm-3 mt-4'>
+                        <div style={{ borderRadius: "13px", boxShadow: "0 4px 25px 0 rgba(0,0,0,.1)" }} className='u-photo-section-container mb-5 mt-5'>
+                            <div className='lets-go-container text-center mt-md-0 mt-sm-3 mt-4'>
                                 <h1 style={{ fontSize: "24px" }}>Create a New Password
                                 </h1>
                             </div>

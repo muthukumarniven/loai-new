@@ -6,6 +6,7 @@ import Button from "../components/Button";
 import Images from "../assets/Images";
 import { useNavigate } from "react-router-dom"; // Import useNavigate
 import RegisterFlowHeader from '../components/RegisterFlowHeader';
+import {toast} from 'react-toastify'
 
 const SignIn = () => {
 
@@ -19,6 +20,7 @@ const SignIn = () => {
 
     const handleNext = () => {
         navigate("/home"); // Navigate to the "Next" screen
+           toast.success("Sign In Succesful")
     };
     return (
         <>

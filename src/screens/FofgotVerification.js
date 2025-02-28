@@ -16,32 +16,34 @@ const FofgotVerification = () => {
     const handleInput = (e, index) => {
         const value = e.target.value;
         if (value.length === 1 && index < inputRefs.current.length - 1) {
-            inputRefs.current[index + 1].focus(); 
+            inputRefs.current[index + 1].focus();
         }
     };
 
     const handleBackspace = (e, index) => {
         if (e.key === "Backspace" && index > 0 && e.target.value === "") {
-            inputRefs.current[index - 1].focus(); 
+            inputRefs.current[index - 1].focus();
         }
     };
 
-    const navigate = useNavigate(); 
+    const navigate = useNavigate();
 
     const handleNext = () => {
-        navigate("/new-password"); 
+        navigate("/new-password");
+  
+
     };
     return (
         <>
-        <RegisterFlowHeader/>
-        <div className="row w-100 m-0" style={{ height: "100vh" }}>
+            <RegisterFlowHeader />
+            <div className="row w-100 m-0" style={{ height: "100vh" }}>
                 <div className="col-12 d-flex align-items-center justify-content-center">
                     <div
                         className="banner-content-container"
                         style={{ maxWidth: "525px", width: "100%" }}
                     >
-                        <div style={{borderRadius:"13px", boxShadow:"0 4px 25px 0 rgba(0,0,0,.1)"}} className='u-photo-section-container mb-5 mt-5'>
-                        <div className="lets-go-container text-center mt-md-0 mt-sm-3 mt-4">
+                        <div style={{ borderRadius: "13px", boxShadow: "0 4px 25px 0 rgba(0,0,0,.1)" }} className='u-photo-section-container mb-5 mt-5'>
+                            <div className="lets-go-container text-center mt-md-0 mt-sm-3 mt-4">
                                 <h1 style={{ fontSize: "24px" }}>Verify Code</h1>
                                 <p className="signup-verfy-mail mt-4">
                                     Code sent to xy****@gmail.com and +91*******530
