@@ -9,9 +9,7 @@ import { useNavigate } from "react-router-dom";
 const MainHeader = ({ display = "block" }) => {
     const navi = useLocation();
     const mobilePopupRef = useRef(null);
-
     const navigate = useNavigate();
-
     const handleNext = () => {
         navigate("/signup");
     };
@@ -22,15 +20,12 @@ const MainHeader = ({ display = "block" }) => {
                 <div className="container-fluid px-xl-5 px-3">
                     <a className="navbar-brand loai-web-logo d-sm-block d-none" href="#"><img src={Images.loaiLogo} /></a>
                     <a className="navbar-brand loai-web-logo d-sm-none d-block" href="#"><img style={{ width: "100%", height: "100%", maxWidth: "50px", maxHeight: "50px" }} src={Images.logoSm} /></a>
-
                     <div className="d-flex align-items-center gap-md-2 gap-1">
-
                         <div className="nav-item d-xl-none d-block" ref={mobilePopupRef}>
                             <Link
                                 className="nav-link d-flex gap-2 text-decoration-none"
                                 to="/signin"
-                                style={{ fontFamily: navi.pathname === "/create-video" ? "Inter-Bold" : "Inter-Regular" }}
-                            >
+                                style={{ fontFamily: navi.pathname === "/create-video" ? "Inter-Bold" : "Inter-Regular" }} >
                                 Sign In
                             </Link>
                         </div>
@@ -48,8 +43,7 @@ const MainHeader = ({ display = "block" }) => {
                                     <Link
                                         className="nav-link text-black d-flex gap-2 text-decoration-none"
                                         to="/"
-                                        style={{ fontFamily: navi.pathname === "/main-home" ? "Inter-Bold" : "Inter-Regular" }}
-                                    >
+                                        style={{ fontFamily: navi.pathname === "/main-home" ? "Inter-Bold" : "Inter-Regular" }}>
                                         Home
                                     </Link>
                                 </li>
@@ -57,8 +51,7 @@ const MainHeader = ({ display = "block" }) => {
                                     <Link
                                         className="nav-link text-black d-flex gap-2 text-decoration-none"
                                         to=""
-                                        style={{ fontFamily: navi.pathname === "" ? "Inter-Bold" : "Inter-Regular" }}
-                                    >
+                                        style={{ fontFamily: navi.pathname === "" ? "Inter-Bold" : "Inter-Regular" }}>
                                         About
                                     </Link>
                                 </li>
@@ -66,8 +59,7 @@ const MainHeader = ({ display = "block" }) => {
                                     <Link
                                         className="nav-link text-black d-flex gap-2 text-decoration-none"
                                         to=""
-                                        style={{ fontFamily: navi.pathname === "/create-video" ? "Inter-Bold" : "Inter-Regular" }}
-                                    >
+                                        style={{ fontFamily: navi.pathname === "/create-video" ? "Inter-Bold" : "Inter-Regular" }} >
                                         How it Works
                                     </Link>
                                 </li>
@@ -78,16 +70,14 @@ const MainHeader = ({ display = "block" }) => {
                                     <Link
                                         className="nav-link text-black d-flex gap-2 text-decoration-none"
                                         to=""
-                                        style={{ fontFamily: navi.pathname === "/create-video" ? "Inter-Bold" : "Inter-Regular" }}
-                                    >
+                                        style={{ fontFamily: navi.pathname === "/create-video" ? "Inter-Bold" : "Inter-Regular" }} >
                                         Support
                                     </Link></li>
                                 <li style={{ display: display }} className='d-xl-block d-none '>
                                     <Link
                                         className="nav-link d-flex gap-2 text-decoration-none "
                                         to="/signin"
-                                        style={{ fontFamily: navi.pathname === "/create-video" ? "Inter-Bold" : "Inter-Regular", color: "#007BFF" }}
-                                    >
+                                        style={{ fontFamily: navi.pathname === "/create-video" ? "Inter-Bold" : "Inter-Regular", color: "#007BFF" }}>
                                         Sign In
                                     </Link>
                                 </li>
