@@ -62,7 +62,7 @@ const Header = () => {
 
     return (
         <>
-            <nav className="navbar navbar-expand-xl bg-body-tertiary shadow-sm">
+            <nav className="navbar navbar-expand-xl bg-body-tertiary shadow-sm position-sticky top-0 z-1">
                 <div className="container-fluid px-xl-5 px-3">
                     <Link to="/home" className="navbar-brand loai-web-logo d-sm-block d-none" href="#"><img src={Images.loaiLogo} /></Link>
                     <Link to="/home" className="navbar-brand loai-web-logo d-sm-none d-block" href="#"><img style={{ width: "100%", height: "100%", maxWidth: "50px", maxHeight: "50px" }} src={Images.logoSm} /></Link>
