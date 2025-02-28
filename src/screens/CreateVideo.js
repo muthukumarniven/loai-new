@@ -5,6 +5,7 @@ import Images from '../assets/Images'
 import Button from '../components/Button';
 import TabHeader from '../components/TabHeader';
 import { useNavigate } from "react-router-dom"; 
+import {toast} from 'react-toastify'
 
 
 const CreateVideo = () => {
@@ -24,6 +25,7 @@ const CreateVideo = () => {
 
     const handleNext = () => {
         navigate("/input-text"); 
+        toast.success("Perfect Image")
     };
     return (
         <div className='main-header-content'>

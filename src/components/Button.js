@@ -5,6 +5,7 @@ function Button({ text, onClick, padding = "0", width = "100%",maxWidth="", font
         <button
             className="custom-button"
             onClick={onClick}
+            
             style={{
                 backgroundColor: backgroundColor,
                 color: color,
@@ -21,6 +22,7 @@ function Button({ text, onClick, padding = "0", width = "100%",maxWidth="", font
                 textDecoration: textDecoration,
                 padding: padding
             }}
+            
         >
             {text}
         </button>

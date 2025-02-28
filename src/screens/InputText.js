@@ -11,6 +11,7 @@ const InputText = () => {
 
     const handleNext = () => {
         navigate("/audio-video"); // Navigate to the "Next" screen
+        
     };
     return (
         <div className='main-header-content'>

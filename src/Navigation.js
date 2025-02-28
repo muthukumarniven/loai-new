@@ -28,12 +28,13 @@ import ForgotPassword from './screens/ForgotPassword';
 import NewPassword from './screens/NewPassword';
 import SignUpVerify from './screens/SignUpVerify';
 import FofgotVerification from './screens/FofgotVerification';
-
+import { ToastContainer } from "react-toastify"
 
 export default function Navigation() {
     return (
         <>
             <BrowserRouter>
+            <ToastContainer position="top-center" theme='dark' />
                 <Routes>
                     <Route path='/' element={<MainHome />} />
                     <Route path='/home' element={<Home />} />
