@@ -23,7 +23,7 @@ const NewPassword = () => {
 
     const handleNext = () => {
         navigate("/signin");
-        toast.success("Password Changed")
+        toast.success("Password Updates")
 
     };
     return (
